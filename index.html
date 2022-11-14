@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script src="js/functions.js" defer></script>
+    <title>Home | Lounge Communities</title>
+</head>
+<body id="top">
+    <header class="header">
+        <div class="main-nav" id="main-nav">
+            <a href="index.html" class="logo">Lounge Communities</a>
+            <a href="index.html" class="logo-icon">L</a>
+            <button aria-controls="navigation" id="mobileToggle" aria-expanded="false" class="mobile-toggle"></button>
+            <label for="searchCheck" class="search-nav">
+                <!-- <button class="search-nav"><i class="fas fa-search"></i></button> -->
+                <i class="fas fa-search"></i>
+            </label>
+            <input type="checkbox" id="searchCheck">
+
+            <div class="search-container" id="searchContainer">
+                <form action="">
+                    <input type="text" placeholder="&#xf002; Search beyound">
+                </form>
+                <button id="headerSearchClosed"><i class="fas fa-close"></i></button>
+            </div>
+
+            <button class="header-user"><i class="fas fa-user-circle"></i></button>
+
+            <nav>
+                <ul class="site-nav" data-visible="false">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li class="has-drop-down"><a href="#" class="nav-link">Elements <span><i class="fa fa-chevron-down"></i></span></a>
+                        <label for="drop-show" class="drop-label">Elements
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </label>
+                        <input type="checkbox" id="drop-show">
+                        <div class="drop-down-max grid-col-3">
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">Primary</a></li>
+                                    <li><a href="#">Individuals</a></li>
+                                    <li><a href="#">Content</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Importance</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">Executive</a></li>
+                                    <li><a href="#">Situations</a></li>
+                                    <li><a href="#">Reading</a></li>
+                                    <li><a href="#">My corner</a></li>
+                                    <li><a href="#">Effective</a></li>
+                                </ul>
+                            </div>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="#">Primary</a></li>
+                                    <li><a href="#">Individuals</a></li>
+                                    <li><a href="#">Content</a></li>
+                                    <li><a href="#">History</a></li>
+                                    <li><a href="#">Importance</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link">Services</a></li>
+                    <li><a href="pages/contact.html" class="nav-link">Contact Us</a></li>
+                    <li class="right-auto has-drop-down"><a href="#" class="nav-link">Other <span><i class="fa fa-chevron-down"></i></span></a>
+                        <label for="drop-show-2" class="drop-label">Other
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </label>
+                        <input type="checkbox" id="drop-show-2">
+                        <div class="drop-down">
+                            <ul>
+                                <li><a href="#">Classes</a></li>
+                                <li><a href="#">Code Pen</a></li>
+                                <li><a href="#">Crash Coures</a></li>
+                                <li><a href="#">Maintenance</a></li>
+                                <li class="position-relative has-drop-down"><a href="#">Repository <span><i class="fa fa-chevron-right"></i></span></a>
+                                    <div class="sub-drop-down">
+                                        <ul>
+                                            <li><a href="#">Git</a></li>
+                                            <li><a href="#">Printers</a></li>
+                                            <li><a href="#">Exhibitions</a></li>
+                                            <li><a href="#">Styesheet</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="search"><a href="#" class="nav-link alt"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#" class="nav-link nav-featured alt"><i class="fa-plus"></i>  Join</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-slide">
+            <div class="header-text">
+                <h1>There are more to <span>Explore</span></h1>
+            </div>
+          <div class="header-search-container">
+            <input type="text" placeholder="Search for more articles">
+            <button><i class="fa-solid fa-search" style="color: var(--icon-background-color);"></i></button>
+          </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <!-- back to top -->
+        <a id="backtotop" href="#top"><i class="fas fa-angle-double-up"></i></a>
+        <!-- /back to top -->
+
+        <!-- signin or register modal-->
+        <div class="signin-container" id="signinContainer">
+            <div class="signin-backdrop"></div>
+            <div class="signin-content">
+                <button class="signin-close" id="signinClose"><i class="fas fa-close"></i></button>
+                <div class="form-container">
+                    <h2>Sign In</h2>
+                    <form action="" class="signin-form">
+                        <input type="text" placeholder="username">
+                        <input type="password" placeholder="password">
+                        <button>Sign In</button>
+                    </form>
+                    <p>Don't have account? <a href="#" class="sign-up">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="register-container" id="registerContainer">
+            <div class="signin-backdrop"></div>
+            <div class="signin-content">
+                <button class="signin-close" id="registerClose"><i class="fas fa-close"></i></button>
+                <div class="form-container">
+                    <h2>Create account</h2>
+                    <form action="" class="signin-form">
+                        <input type="text" placeholder="username">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="password">
+                        <input type="password" placeholder="confirm password">
+                        <button>Sign up</button>
+                    </form>
+                    <div class="alternate-regiter">
+                        <div class="or">
+                            <span><hr></span> <span>or</span> <span><hr></span>
+                        </div>
+                        <div class="alt-register-icons">
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p>Already have account? <a href="#" class="sign-in">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- /signin or register modal-->
+
+
+         <!-- trending -->
+        <div class="container">
+            <div class="trending-grid">
+                <div class="trending">
+                    <div class="icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="trending-description">
+                        <h3>Kids corner</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium?</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="trending-description">
+                        <h3>Amination</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium?</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="icon">
+                        <i class="fas fa-donate"></i>
+                    </div>
+                    <div class="trending-description">
+                        <h3>Piracy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium?</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="trending-description">
+                        <h3>Background</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium?</p>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="icon">
+                        <i class="fas fa-spider"></i>
+                    </div>
+                    <div class="trending-description">
+                        <h3>Triller</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /trending -->
+
+        <div class="trending-container">
+            <div class="container">
+                <h1 class="main-header-center">Trending Stories</h1>
+                <div class="recent-grid">
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>Out of Reality</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-chess recent-icon"></i>
+                    </div>
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>Infatuation</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-umbrella-beach recent-icon"></i>
+                    </div>
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>Hard work</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-cogs recent-icon"></i>
+                    </div>
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>Caring</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-wine-glass recent-icon"></i>
+                    </div>
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>Step out</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-user-secret recent-icon"></i>
+                    </div>
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>Executive</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-synagogue recent-icon"></i>
+                    </div>
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>Games</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-gamepad recent-icon"></i>
+                    </div>
+                    <div class="recent">
+                     <div class="recent-content">
+                         <h3>News</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perferendis natus nobis, voluptas beatae libero.....</p>
+                         <a href="#" class="read-more">Read more <span><i class="fas fa-angle-double-right"></i></span></a>
+                     </div>
+                         <i class="fas fa-newspaper recent-icon"></i>
+                    </div>
+                 </div>
+            </div>
+        </div>
+            
+
+        <!-- core values -->
+        <div class="core-values">
+            <div class="container">
+                <div class="core-values-flex">
+                    <header class="core-header">
+                        <p>Catch the best of Us Everywhere</p>
+                        <h2>Our Reasons for Being Number One</h2>
+                    </header>
+                    <div class="core-container">
+                        <div class="core-text">
+                            <h2>Our Core Values</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit possimus reprehenderit veniam autem odit quas maiores natus necessitatibus pariatur deserunt ullam, nostrum placeat, aliquid modi commodi inventore ut tempore corrupti sint vel a animi quasi facilis. Veniam, libero necessitatibus.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos expedita eligendi eos perferendis, et itaque dolorem minima voluptatum. Beatae ducimus laudantium perferendis quasi in a, saepe qui eaque ut aperiam.
+                            </p>
+                            <div class="core-list">
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Secured</li>
+                                    <li><i class="fas fa-check"></i> Affordable</li>
+                                    <li><i class="fas fa-check"></i> Duration</li>
+                                    <li><i class="fas fa-check"></i> Consistence</li>
+                                    <li><i class="fas fa-check"></i> Quality</li>
+                                </ul>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Convienient</li>
+                                    <li><i class="fas fa-check"></i> Affordable</li>
+                                    <li><i class="fas fa-check"></i> Duration</li>
+                                    <li><i class="fas fa-check"></i> Consistence</li>
+                                    <li><i class="fas fa-check"></i> Quality</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="core-img">
+                            <img src="images/header-bg.jpg" alt="">
+                            <div class="core-img-layer">
+                                <button class="sign-up-2">Join Our Community Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /core values -->
+
+
+        <!-- our team 2 -->
+        <div class="our-team-container">
+            <div class="container">
+                <div class="our-team-header">
+                    <p>Checkout the Great Brainstormers</p>
+                    <h2>Our Outstanding Team Members</h2>
+                </div>
+                <div class="our-team-2-grid">
+                    <div class="our-team">
+                        <div class="our-team-img">
+                            <img src="images/header-bg.jpg" alt="">
+                            <div class="our-team-layer">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="our-team-description">
+                            <div class="admin">
+                                <i class="fas fa-user"></i>
+                                <a href="#"><small>Admin</small></a>
+                                <span>|</span>
+                                <small>13 Oct 2022</small>
+                            </div>
+                        </div>
+                        <h3>Senior Frontend Developer</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quae tenetur amet dicta at accusantium autem expedita rem. Labore nostrum debitis amet autem, repellat tempora.</p>
+                    </div>
+                    <div class="our-team">
+                        <div class="our-team-img">
+                            <img src="images/header-bg.jpg" alt="">
+                            <div class="our-team-layer">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="our-team-description">
+                            <div class="admin">
+                                <i class="fas fa-user"></i>
+                                <a href="#"><small>Admin</small></a>
+                                <span>|</span>
+                                <small>13 Oct 2022</small>
+                            </div>
+                        </div>
+                        <h3>Senior Database Administrator</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quae tenetur amet dicta at accusantium autem expedita rem. Labore nostrum debitis amet autem, repellat tempora.</p>
+                    </div>
+                    <div class="our-team">
+                        <div class="our-team-img">
+                            <img src="images/header-bg.jpg" alt="">
+                            <div class="our-team-layer">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="our-team-description">
+                            <div class="admin">
+                                <i class="fas fa-user"></i>
+                                <a href="#"><small>Admin</small></a>
+                                <span>|</span>
+                                <small>13 Oct 2022</small>
+                            </div>
+                        </div>
+                        <h3>Senior UI Designer</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus quae tenetur amet dicta at accusantium autem expedita rem. Labore nostrum debitis amet autem, repellat tempora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- /our team 2 -->
+
+
+
+        <!-- team -->
+        <div class="team-container">
+            <div class="container">
+                <h1 class="main-header-center">Our Team</h1>
+                <div class="team-grid">
+                    <div class="member">
+                        <img src="images/header-bg-img.jpg" alt="">
+                        <div class="title">
+                            <h3 class="name">Richard Nartey</h3>
+                            <p class="job">Web Development</p>
+                        </div>
+                        <div class="member-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, saepe. Reprehenderit accusantium debitis ut quae nulla numquam ad voluptate ipsum laudantium esse, rem sequi voluptatibus?</p>
+                            <div class="media-icons">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-google-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src="images/test-1.jpg" alt="">
+                        <div class="title">
+                            <h3 class="name">Richard Nartey</h3>
+                            <p class="job">Web Development</p>
+                        </div>
+                        <div class="member-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, saepe. Reprehenderit accusantium debitis ut quae nulla numquam ad voluptate ipsum laudantium esse, rem sequi voluptatibus?</p>
+                            <div class="media-icons">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-google-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src="images/header-bg-img.jpg" alt="">
+                        <div class="title">
+                            <h3 class="name">Richard Nartey</h3>
+                            <p class="job">Web Development</p>
+                        </div>
+                        <div class="member-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, saepe. Reprehenderit accusantium debitis ut quae nulla numquam ad voluptate ipsum laudantium esse, rem sequi voluptatibus?</p>
+                            <div class="media-icons">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-google-plus"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src="images/header-bg-img.jpg" alt="">
+                        <div class="title">
+                            <h3 class="name">Richard Nartey</h3>
+                            <p class="job">Web Development</p>
+                        </div>
+                        <div class="member-description">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, saepe. Reprehenderit accusantium debitis ut quae nulla numquam ad voluptate ipsum laudantium esse, rem sequi voluptatibus?</p>
+                            <div class="media-icons">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /team -->
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-content">
+                    <h3 class="footer-header">Lounge Communities</h3>
+                    <div class="message">
+                        <p class="about-company">At Lounge Communities, we design various computer & mobile software and web applications of all kinds. We design customized software for customer's request. Also, we intensively teach others who have the interest of becoming elite software engineers.</p>
+                        <div class="footer-icons">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-google-plus"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3 class="footer-header">Projects</h3>
+                    <div class="message">
+                        <ul class="project-list">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Elments</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Content</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3 class="footer-header">Subscribe to our newsletter</h3>
+                    <div class="message">
+                        <form action="" class="footer-form">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3 class="footer-header">Address</h3>
+                    <div class="message">
+                        <ul class="footer-address">
+                            <li><a href="#"><i class="fas fa-location-dot mr-5"></i> PS 100 - Assin Foso, Ghana</a></li>
+                            <li><a href="#"><i class="fas fa-envelope mr-5"></i> info@loungecommunities.com</a></li>
+                            <li><i class="fas fa-phone mr-5"></i> +233 240 78 3779</li>
+                            <li><i class="fas fa-phone mr-5"></i> +233 240 78 3779</li>
+                            <li><i class="fas fa-phone mr-5"></i> +233 240 78 3779</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copy-right">&copy; All rights reserved - Lounge Communites</p>
+    </footer>
+
+
+
+
+    <script src="fontawesome/js/all.js"></script>
+</body>
+</html>
